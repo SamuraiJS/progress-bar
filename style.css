@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Varela Round', sans-serif;
+}
+
+body {
+	background-color: #ff0400;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container-bar {
+	width: 500px;
+	height: 450px;
+	background-color: #efefef;
+	border-radius: 20px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.progress-circle {
+	position: relative;
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, .15), -6px -6px 10px -1px rgba(255, 255, 255, .7);	
+	background-image: conic-gradient(#ef3620 0deg, #ededed 0deg);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.progress-circle::after {
+	content: "";
+	width: 200px;
+	height: 200px;
+	background-color: #efefef;
+	border-radius: 50%;
+	position: absolute;
+	box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, .2), inset -4px -4px 6px -1px rgba(255, 255, 255, .7),  0.5px 0.5px 1px rgba(0, 0, 0, .2), -0.5px -0.5px 1px rgba(255, 255, 255, .7);
+}
+
+
+.value {
+	position: relative;
+	z-index: 20;
+	font-size: 2em;
+	color: #ef3620;
+}
+
+.text {
+	font-size: 30px;
+	font-weight: bold;
+	color: #ef3620;
+	margin: 20px;
+}
+
+.btn {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+}
+
+input {
+	position: relative;
+	width: 100%;
+	height: 50px;
+	border: none;
+	border-radius: 10px 10px 0 0;
+	outline: none;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	color: #ef3620;
+}
+button {
+	border-radius: 0 0 10px 10px;
+	background-color: #ef3620;
+	padding: 10px 0;
+	outline: none;
+	font-size: 20px;
+	color: #fff;
+	border: none;
+}
+button:active {
+	cursor: pointer;
+	color: #ef3620;
+}
